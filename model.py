@@ -42,7 +42,7 @@ class CNNBlock(nn.Module):
         self.leakyrelu = nn.LeakyReLU(0.1)
 
     def forward(self, x):
-        return self.leakyrelu(self.batchnorm(self.conv(x)))
+        return self.leakyrelu(self.conv(x))
 
 
 class Yolov1(nn.Module):

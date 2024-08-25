@@ -1,5 +1,5 @@
 """
-Kreiiert ein Pytorch Datenset um unser Bilder und Labels (Datenset) zu laden
+Kreiert ein Pytorch Datenset um die Bilder und Labels (Datenset) zu laden
 """
 
 import torch

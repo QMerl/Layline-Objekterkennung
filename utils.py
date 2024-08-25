@@ -165,12 +165,7 @@ def average_precision(
         precisions = torch.cat((torch.tensor([1]), precisions))
         recalls = torch.cat((torch.tensor([0]), recalls))
         average_precisions.append(torch.trapz(precisions, recalls))
-        print("average_precission")
-        print(average_precisions)
-        print("precission")
-        print(precisions)
-        print("recall")
-        print(recalls)
+        
 
     return sum(average_precisions) / len(average_precisions)
 
@@ -198,8 +193,7 @@ def get_bboxes(
         x = x.to(device)
         labels = labels.to(device)
 
-        print("labels")
-        print(len(labels))
+        
         with torch.no_grad():
             predictions = model(x)
 
